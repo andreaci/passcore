@@ -61,7 +61,7 @@
                 }
 
                 // Check if the newPassword is Pwned
-                if (PwnedPasswordsSearch.PwnedSearch.IsPwnedPassword(newPassword))
+                if (_options.PwnedCheck && PwnedPasswordsSearch.PwnedSearch.IsPwnedPassword(newPassword))
                 {
                     _logger.LogError("Failed due to pwned password: New password is publicly known and can be used in dictionary attacks");
 
