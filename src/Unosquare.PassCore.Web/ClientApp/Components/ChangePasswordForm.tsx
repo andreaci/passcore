@@ -99,7 +99,7 @@ export const ChangePasswordForm: React.FunctionComponent<IChangePasswordFormProp
                 value={fields.Username}
                 style={{
                     height: '20px',
-                    margin: '15px 0px 50px 0',
+                    margin: '15px 0 50px 0',
                 }}
                 fullWidth={true}
                 errorMessages={userNameErrorMessages}

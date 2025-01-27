@@ -47,6 +47,14 @@ public class PasswordChangeOptions : IAppSettings
     public string? IdTypeForUser { get; set; }
 
     /// <summary>
+    /// Gets or sets the identifier type for user.
+    /// </summary>
+    /// <value>
+    /// The identifier type for user.
+    /// </value>
+    public bool PwnedCheck { get; set; }
+
+    /// <summary>
     /// Gets or sets a value indicating whether [update last password].
     /// </summary>
     /// <value>
